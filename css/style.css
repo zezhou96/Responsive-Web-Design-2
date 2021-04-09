@@ -1,0 +1,406 @@
+@font-face {
+    font-family: 'milkshakeregular';
+    src: url('milkshake-webfont.woff2') format('woff2'),
+         url('milkshake-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 1.6rem;
+	background-color: #1b1c1a;
+}
+
+.visuallyhidden {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px; width: 1px;
+	margin: -1px; padding: 0; border: 0;
+}
+
+/****** Header ******/
+header {
+	padding: 4%;
+	background-color: #171816;
+}
+
+h1 {
+	font-size: 3.2rem;
+	font-family: 'milkshakeregular';    
+    font-weight: normal;
+    font-style: normal; 
+	color: #f5e7cb;
+}
+
+.toggle-btn {
+	border: none;
+    background-color: #1b1c1a;
+    outline: none;
+}
+
+.toggle-btn:hover {
+	cursor: pointer;
+}
+
+svg rect {
+	fill: #f5e7cb;
+}
+
+.flex-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.dropdown-menu nav ul li a {
+	display: flex;
+	font-family: 'B612', sans-serif;
+	color: #f5e7cb;
+	text-decoration: none;
+	height: 3rem;
+	margin: 3rem 0;
+}
+
+.dropdown-menu nav ul li a:hover {
+	color: #c6552c;
+}
+
+.dropdown-menu nav ul li a svg {
+	width: 4rem;
+}
+
+.dropdown-menu nav ul li a span {
+	padding-top: 1rem;
+}
+
+header hr {
+	border-top: #706b5e;
+}
+
+.header-btns {
+	margin: 4rem 0 0 0;
+	height: 5rem;
+}
+
+.header-btns a {
+	text-decoration: none;
+	font-family: 'B612', sans-serif;
+	color: #f5e7cb;
+	border: 1px solid #f5e7cb;
+	padding: 1rem;
+	margin-right: 2rem;
+}
+
+.header-btns a:hover {
+	background-color: #daa03d;
+	color: #171816;
+}
+
+.dropdown-menu {
+	position: absolute;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.5s ease-in-out;
+	background-color: #171816;
+	left: 0;
+	width: 100vw;
+	padding: 0 4% 0 4%;
+}
+
+.show-nav {
+    max-height: 50rem;
+}
+
+/****** Main ******/
+/**** Banner ****/
+.banner {
+	background: linear-gradient(0deg, rgba(38, 38, 38, 0.3), rgba(38, 38, 38, 0.3)), url(../img/banner-bg-legacy.jpg) center bottom / cover no-repeat;
+	padding: 5rem 1rem 0 1rem;
+}
+
+.banner div {
+	background-color: #daa03d;
+	padding: 5rem 2.5rem 0 2.5rem;
+	text-align: center;
+	height: 46rem;
+	max-width: 50rem;
+	max-height: 48.5rem;
+} 
+
+.banner h3 {
+	font-family: 'milkshakeregular';    
+    font-weight: normal;
+    font-style: normal; 
+    font-size: 3.9rem;
+}
+
+.banner hr {
+	border: 2px solid #c6552c;	
+	width: 1.74rem;
+}
+
+.banner p {
+	font-family: 'B612', sans-serif;
+	margin-top: 2.5rem;
+}
+
+/**** Article ****/
+.article {
+	padding: 8rem 2rem;
+}
+
+.article h3 {
+	color: #c6552c;
+}
+
+.article h4 {
+	font-family: 'milkshakeregular';   
+    font-weight: normal;
+    font-style: normal; 
+    color: #f5e7cb;
+    font-size: 3rem;
+    line-height: 1;
+    margin: 1rem 0 3rem 0;
+}
+
+.article p,
+.article a {
+	color: #f5e7cb;
+	font-family: 'B612', sans-serif;
+}
+
+.article p {
+	margin-bottom: 3rem;
+}
+
+.article a {
+	text-decoration: none;
+	border-top: 1px solid #f5e7cb;
+	border-bottom: 1px solid #f5e7cb;
+	padding: 1rem;
+}
+
+.article a:hover {
+	background-color: #daa03d;
+	color: #171816;
+}
+
+/**** Guides ****/
+.guides {
+	background-color: #daa03d;
+	position: relative;
+	padding: 2rem 0 8rem 0;
+}
+
+.title-box {
+	background-color: #20211f;
+	padding: 1rem 0 0 1.5rem;
+	position: relative;
+	width: 28.8rem;
+	height: 9.6rem;
+	left: 0.6rem;
+	top: 5rem;
+}
+
+.guides h3 {
+	color: #c6552c;
+	line-height: 2;
+}
+
+.guides h4 {
+	font-family: 'milkshakeregular';   
+    font-weight: normal;
+    font-style: normal; 
+    color: #f5e7cb;
+    font-size: 3rem;
+}
+
+.guides-img {
+	background: url(../img/sitting-bg-legacy.jpg) center bottom / cover no-repeat;
+	height: 37.5rem;
+	max-width: 56.6rem;
+	max-height: 37.9rem;
+}
+
+.guides-text {
+	padding: 1rem 0 0 1rem;
+}
+
+.guides-text ul {
+	margin-bottom: 3rem;
+}
+
+.guides-text ul li {
+	font-family: 'B612', sans-serif;
+	line-height: 2;
+	display: list-item;
+	list-style-type: disc;
+	list-style-position: inside;
+}
+
+.guides-text a {
+	text-decoration: none;
+	border-top: 1px solid #c6552c;
+	border-bottom: 1px solid #c6552c;
+	padding: 1rem;
+	font-family: 'B612', sans-serif;
+	color: #171816;
+}
+
+.guides-text a:hover {
+	background-color: #252525;
+	color: #f5e7cb;
+}
+
+/****** Footer ******/
+footer {
+	padding: 7rem 2rem 5rem 1rem;
+	text-align: right;
+}
+
+.footer-big p {
+	font-size: 5.5rem;
+	color: #171816;
+	font-weight: 900;	
+	line-height: 1.5;
+}
+
+.copyright {
+	font-family: 'B612', sans-serif;
+	color: #f5e7cb;
+	margin-top: 2rem;
+}
+
+/****** 1300px screen ******/
+@media only screen and (min-width: 1300px) {
+	body {
+		max-width: 1300px;
+		margin: 0 auto;
+	}
+
+	/**** Header ****/
+	.toggle-btn {
+		display: none;
+	}
+
+	header {
+		display: flex;
+		padding: 1% 2% 2% 2%;
+		height: 8rem;
+	}
+
+	header h1 {
+		margin-right: 25rem;
+	}
+
+	.dropdown-menu {
+		max-height: 7rem;
+		position: static;
+		overflow: visible;		
+		display: flex;
+		justify-content: space-between;
+		padding: 0;
+	}
+
+	.dropdown-menu nav ul {
+		display: flex;
+		justify-content: space-between;
+	} 
+
+	.dropdown-menu nav ul li a {
+		margin: 0.7rem 0 0 2rem;
+	}
+
+	header hr {
+		display: none;
+	}
+
+	.header-btns {
+		margin: 1.3rem 0 0 0;
+	}
+
+	.header-btns a:last-child {
+		margin: 0;
+	}
+
+	/**** Banner ****/
+	.banner div{
+		position: relative;
+		top: 6rem;
+		left: 10rem;
+		padding: 6rem 4.2rem 6rem 4.2rem;
+	}
+
+	.banner div h3 {
+		font-size: 4.8rem;
+	}
+
+	.banner div p {
+		font-size: 1.8rem;
+	}
+
+	.banner hr {
+		width: 2.7rem;
+	}
+
+	/**** Article ****/
+	.article {
+		padding: 9rem 3rem 15rem 65rem;
+	}
+
+	.article h3,
+	.article p,
+	.article a {
+		font-size: 1.8rem;
+	}
+
+	.article h4 {
+		font-size: 3.9rem;
+	}
+
+	/**** Guides ****/
+	.guides {
+		display: flex;
+		padding: 5rem 0 10rem 2rem;
+	}
+
+	.guides h3,
+	.guides a {
+		font-size: 1.8rem;
+	}
+
+	.guides h4 {
+		font-size: 3.9rem;
+	}
+
+	.title-box {
+		width: 50rem;
+		height: 10.7rem;
+		left: 7rem;
+		top: 7rem;
+	}
+
+	.guides-text {
+		margin: 18rem 0 0 11rem;
+	}
+
+	.guides-text ul li {
+		line-height: 1.5;
+	}
+
+	/**** Footer ****/
+	.footer-big p {
+		font-size: 15rem;
+		line-height: 1.2;
+	}
+
+	.copyright {
+		font-size: 1.4rem;
+		margin-top: 10rem;
+	}
+}
